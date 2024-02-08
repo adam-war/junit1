@@ -56,5 +56,17 @@ public void simpleMoveNeg()
    assertTrue(p.x == 0 && p.y == 1);
 }
 
+//
+// Test a more complex move
+//
+@Test
+public void largeMove()
+{
+   Point p;
+   System.out.println("Running test largeMove.");
+   p = circle1.moveBy(1,5);
+   assertTrue(p.x == 2 && p.y == 7);
+}
+
 }
 
