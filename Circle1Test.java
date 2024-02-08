@@ -92,6 +92,18 @@ public void negativeScale()
    assertTrue(p.radius == 1.5);
 }
 
+//
+// Test intersection for intersecting circles
+//
+@Test
+public void intersectionTrue()
+{
+   Circle1 circle2 = new Circle1(0, 1, 4);
+   System.out.println("Running test true intersection");
+   assertTrue(circle1.intersects(circle2));
+}
+
+
 
 }
 
