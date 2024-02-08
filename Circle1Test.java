@@ -77,8 +77,21 @@ public void simpleScale()
    Circle1 p = circle1;
    System.out.println("Running test simpleScale.");
    p.scale(2.0);
-assertTrue(p.radius == 6);
+   assertTrue(p.radius == 6);
 }
+
+//
+// Test a negative scale factor
+//
+@Test
+public void negativeScale()
+{
+   Circle1 p = circle1;
+   System.out.println("Running test negativeScale.");
+   p.scale(0.5);
+   assertTrue(p.radius == 1.5);
+}
+
 
 }
 
