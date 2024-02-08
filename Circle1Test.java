@@ -68,5 +68,17 @@ public void largeMove()
    assertTrue(p.x == 2 && p.y == 7);
 }
 
+//
+// Test a simple scale
+//
+@Test
+public void simpleScale()
+{
+   Circle1 p = circle1;
+   System.out.println("Running test simpleScale.");
+   p.scale(2.0);
+assertTrue(p.radius == 6);
+}
+
 }
 
