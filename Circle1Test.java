@@ -103,7 +103,16 @@ public void intersectionTrue()
    assertTrue(circle1.intersects(circle2));
 }
 
-
+//
+// Test intersectionf or non-intersecting circles
+//
+@Test
+public void intersectionFalse()
+{
+   Circle1 circle2 = new Circle1(-6, 1, 4);
+   System.out.println("Running test false intersection");
+   assertFalse(circle1.intersects(circle2));
+}
 
 }
 
